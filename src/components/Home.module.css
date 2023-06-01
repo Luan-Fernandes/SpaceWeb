@@ -1,0 +1,54 @@
+.containerPai{
+    background-image: url(../imagens/ImgHome/background-home-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.txt{
+    width: 400px;
+    height: 382px;
+    margin-top: 150px;
+}
+.txt span{
+    font-size: 25px
+
+}
+.txt h1{
+    font-size: 130px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+.txt p{
+    font-size: 18px;
+}
+.explore span{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 230px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 32px;
+    color: black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    font-weight: lighter;
+}
+.explore{
+    border-radius: 210px;
+    padding: 80px;
+    margin-top: 150px;
+    transition: .5s;
+}
+
+.explore:hover{
+    background-color: rgba(255, 255, 255, 0.133);
+}
+

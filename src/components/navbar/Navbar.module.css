@@ -1,0 +1,77 @@
+.navbar{
+    width: 100%;
+    height: 5vw;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position:fixed;
+}
+
+.containerL{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.containerL span{
+    border-radius: 40px;
+}
+.containerL div{
+    width: 80%;
+    border-top: 1px solid rgba(197, 188, 188, 0.716);
+    position: relative;
+    left: 50px;
+}
+
+.containerR{
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.133);
+
+}
+.containerR ul{
+    height: 100%;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.home, .destino, .crew, .tec{
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+    transition: .5s;
+    color: white;
+}
+.active{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    border-bottom: 5px solid white;
+    transition: .5s;
+    color: white;
+}
+.containerR li label{
+    font-weight: bold;
+}
+.containerR li span{
+    color: rgb(219, 216, 216);
+}
+
+.containerR li:hover{
+    border-color: rgba(255, 255, 255, 0.66);
+}
