@@ -36,7 +36,7 @@ const Tecnologia = () => {
     else if(selectNaves === 2){
       setNameNaves("ESPAÇOPORTO")
       setTxtSobre("Um porto espacial ou cosmódromo é um local para lançar (ou receber) espaçonaves, por analogia ao porto marítimo para navios ou aeroporto para aeronaves. Baseado no famoso Cabo Canaveral, nosso espaçoporto está idealmente situado para aproveitar a rotação da Terra para o lançamento.")
-      setImgNaves(imgSpace)
+      setImgNaves(imgSpacePort)
       setStyleLaunch(null)
       setStylesPaceport(styles.activeNav)
       setStylesPaceCapsula(null)
@@ -44,7 +44,7 @@ const Tecnologia = () => {
     else{
       setNameNaves("CÁPSULA ESPACIAL")
       setTxtSobre("Uma cápsula espacial é uma espaçonave frequentemente tripulada que usa uma cápsula de reentrada de corpo contundente para reentrar na atmosfera da Terra sem asas. Nossa cápsula é onde você passará seu tempo durante o voo. Inclui um ginásio espacial, cinema e muitas outras actividades para o manter entretido.")
-      setImgNaves(imgSpacePort)
+      setImgNaves(imgSpace)
       setStyleLaunch(null)
       setStylesPaceport(null)
       setStylesPaceCapsula(styles.activeNav)
