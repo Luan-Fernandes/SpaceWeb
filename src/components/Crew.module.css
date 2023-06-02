@@ -1,0 +1,71 @@
+.crew{
+    background-image: url(../imagens/ImgCrew/background-crew-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow-y: hidden;
+}
+.dados{
+    width: 550px;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dados span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.dados span label{
+    font-weight: bold;
+    color: rgb(106, 106, 106);
+}
+.dados span p{
+    text-transform: uppercase;
+}
+.dadosPessoas h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: rgb(195, 194, 194);
+}
+.dadosPessoas h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.dadosPessoas p{
+    width: 400px;
+    height:150px;
+    line-height: 1.5;
+    color: rgb(195, 194, 194);
+}
+.navbar{
+    display: flex;
+    gap: 10px;
+}
+.douglas, .mark, .victor, .anousheh{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(95, 94, 94, 0.46);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+#activeNav{
+    background-color: white;
+}
+
+.imgPessoas img{
+    height: 500px;
+    width: 450px;
+    margin-top: 160px;
+}
