@@ -9,9 +9,12 @@
 }
 .luas h1 span{
     font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 .luas h1 label{
     color: rgb(87, 86, 86);
+    font-size: 18px;
 }
 .luas img{
     width: 380px;

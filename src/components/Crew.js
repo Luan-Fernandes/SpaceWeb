@@ -22,7 +22,6 @@ const Crew = () => {
   const [styleMark, setStyleMark] = useState();
   const [styleVictor, setStyleVictor] = useState();
   const [styleAnousheh, setStyleAnousheh] = useState();
-
   useEffect(() => {
     if(selectPessoas === 1){
       setCargPessoa("Comandante")
@@ -60,13 +59,13 @@ const Crew = () => {
       setNamePessoa("Anousheh Ansari")
       setTxtSobre("Anousheh Ansari é uma engenheira iraniana-americana e cofundadora da Prodea Systems. Ansari foi a quarta turista espacial autofinanciada, a primeira mulher autofinanciada a voar para a ISS e a primeira iraniana no espaço.")
       setImgPessoa(imgAnousheh)
-      setImgPessoa(imgAnousheh)
       setStyleDouglas(null)
       setStyleMark(null)
       setStyleVictor(null)
       setStyleAnousheh(styles.activeNav)
     }
   },[selectPessoas])
+  
   return (
     <div className={styles.crew}>
 
@@ -82,9 +81,9 @@ const Crew = () => {
           </div>
           <nav className={styles.navbar}>
             <div onClick={() => setSelectPessoas(1)} className={styles.douglas} id={styleDouglas}></div>
-            <div onClick={() => setSelectPessoas(2)} className={styles.mark} id={styleMark}></div>
-            <div onClick={() => setSelectPessoas(3)} className={styles.victor} id={styleVictor}></div>
-            <div onClick={() => setSelectPessoas(4)} className={styles.anousheh} id={styleAnousheh}></div>
+            <div onClick={() => setSelectPessoas(2)} className={styles.mark}    id={styleMark}></div>
+            <div onClick={() => setSelectPessoas(3)} className={styles.victor}  id={styleVictor}></div>
+            <div onClick={() => setSelectPessoas(4)} className={styles.anousheh}id={styleAnousheh}></div>
           </nav>
       </section>
 
