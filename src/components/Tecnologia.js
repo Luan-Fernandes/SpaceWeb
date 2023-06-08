@@ -35,7 +35,7 @@ const Tecnologia = () => {
     }
     else if(selectNaves === 2){
       setNameNaves("ESPAÇOPORTO")
-      setTxtSobre("Um porto espacial ou cosmódromo é um local para lançar (ou receber) espaçonaves, por analogia ao porto marítimo para navios ou aeroporto para aeronaves. Baseado no famoso Cabo Canaveral, nosso espaçoporto está idealmente situado para aproveitar a rotação da Terra para o lançamento.")
+      setTxtSobre("Um porto espacial ou cosmódromo é um local para lançar (ou receber) espaçonaves, por analogia ao porto marítimo para navios ou aeroporto para aeronaves. Baseado no famoso Cabo Canaveral, nosso espaçoporto está idealmente situado para aproveitar a rotação da Terra para o lançamento. ")
       setImgNaves(imgSpacePort)
       setStyleLaunch(null)
       setStylesPaceport(styles.activeNav)

@@ -6,6 +6,7 @@
     justify-content: space-around;
     align-items: center;
     color: white;
+    overflow-x: hidden;
 }
 .txt{
     width: 400px;
@@ -38,7 +39,6 @@
     color: black;
     width: 200px;
     height: 200px;
-    position: relative;
     font-weight: lighter;
 }
 .explore{
@@ -50,5 +50,39 @@
 
 .explore:hover{
     background-color: rgba(255, 255, 255, 0.133);
+}
+
+@media screen and (max-width: 720px){
+    .containerPai{
+        background-image: url(../imagens/ImgHome/background-home-mobile.jpg);
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .txt{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .txt span{
+        font-size: 15px
+    
+    }
+    .txt h1{
+        font-size: 110px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-weight: normal;
+    }
+    .txt p{
+        font-size: 18px;
+        width: 330px;
+    }
+    .explore{
+        margin-top: 0;
+        padding: 30px;
+    }
 }
 

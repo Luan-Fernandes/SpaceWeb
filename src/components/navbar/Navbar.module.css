@@ -7,6 +7,9 @@
     align-items: center;
     position:fixed;
 }
+.navbarM{
+display: none;
+}
 
 .containerL{
     width: 40%;
@@ -74,4 +77,81 @@
 
 .containerR li:hover{
     border-color: rgba(255, 255, 255, 0.66);
+}
+
+@media screen and (max-width: 720px){
+    .navbarM{
+        display: block;
+        overflow-x: hidden;
+    }
+    .navbar{
+        display: none;
+    }
+    .containerLM{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menuS{
+        cursor: pointer;
+        width: 40px;
+    }
+    
+    .containerRM{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .containerRM ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 0;
+        height: 100%;
+        width: 70%;
+        color: white;
+        background-color: rgba(10, 10, 10, 0.63);
+    }
+    .containerRM ul li{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    }
+
+    .containerRMActive{
+        display: flex;
+        justify-content: flex-end;
+        transform: translateX(100%);
+    }
+    .containerRMActive ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 0;
+        height: 100%;
+        width: 70%;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.133);
+    }
+    .containerRMActive ul li{
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        list-style-type: none;
+        }
+    .homeM, .destinoM, .crewM, .tecM{
+        border-bottom: 3px solid transparent;
+        transition: .5s;
+        height: 50px;
+    }
+    .activeM{
+        border-bottom: 3px solid white;
+    }
 }

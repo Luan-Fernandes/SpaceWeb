@@ -98,7 +98,7 @@ const Destino = () => {
           </ul>
         </nav>
         <h1>{nameAstro}</h1>
-        <p>{descAstro}</p>
+        <p id={styles.descM}>{descAstro}</p>
         <hr/>
         <div className={styles.dados}>
           <label>
