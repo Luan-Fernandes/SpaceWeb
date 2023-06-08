@@ -8,9 +8,6 @@
     color: white;
     overflow-x: hidden;
 }
-#descM{
-    display: none;
-}
 
 .luas h1 span {
     font-weight: normal;
@@ -101,6 +98,7 @@ hr {
 @media screen and (max-width: 720px) {
     .destino {
         flex-direction: column;
+        background-image: url(../imagens/ImgDestino/background-destination-mobile.jpg);
     }
 
     .luas{
