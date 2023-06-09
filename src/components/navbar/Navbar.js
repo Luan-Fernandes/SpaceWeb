@@ -16,7 +16,7 @@ const Navbar = () => {
     
     const history = useNavigate();
 
-    const [step, setStep] = useState(0);
+    const [step, setStep] = useState(1);
 
     const [menu, setMenu] = useState(false);
 

@@ -87,9 +87,8 @@ const Crew = () => {
           </nav>
       </section>
 
-      <section className={styles.imgPessoas}>
-        <img src={imgPessoa} alt="img pessoas" />
-      </section>
+      
+        <img className={styles.imgPessoas} src={imgPessoa} alt="img pessoas" />
 
     </div>
   )

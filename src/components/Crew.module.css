@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .dados{
     width: 550px;
@@ -64,8 +64,64 @@
     background-color: white;
 }
 
-.imgPessoas img{
+.imgPessoas{
     height: 500px;
     width: 450px;
     margin-top: 160px;
+}
+@media screen and (max-width: 720px) {
+    .crew{
+    background-image: url(../imagens/ImgCrew/background-crew-desktop.jpg);
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+}
+.imgPessoas{
+    height: 250px;
+    width: 250px;
+    margin-top: 160px;
+    border-bottom: 1px solid rgb(117, 116, 116);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dados{
+    width: 90%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+.dados span{
+    font-size: 15px;
+}
+.dadosPessoas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.dadosPessoas h2{
+    font-size: 21px;
+}
+.dadosPessoas h1{
+    font-size: 25px;
+}
+.dadosPessoas p{
+    width: 100%;
+    height: 100px;
+}
+.navbar{
+    margin-top: 30px;
+    gap: 50px;
+}
+.douglas, .mark, .victor, .anousheh{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(95, 94, 94, 0.46);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
 }
