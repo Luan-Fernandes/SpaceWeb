@@ -8,6 +8,20 @@
     color: white;
     overflow-x: hidden;
 }
+.luas{
+    animation: container1 3s;
+}
+@keyframes container1 {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
 
 .luas h1 span {
     font-weight: normal;
@@ -27,6 +41,17 @@
 
 .descLuas {
     width: 500px;
+    animation: container2 2s;
+}
+@keyframes container2 {
+    0%{
+        transform: translateX(100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
 }
 
 .descLuas ul {

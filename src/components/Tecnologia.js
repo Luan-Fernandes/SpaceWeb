@@ -52,7 +52,7 @@ const Tecnologia = () => {
   },[selectNaves])
   return (
     <div className={styles.tecnologia}>
-      <section>
+      <section className={styles.containerpai}>
       <div className={styles.cabecalho}>
         <span>03</span>
         <p>SPACE LAUNCH 101</p>

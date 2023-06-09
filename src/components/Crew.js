@@ -68,7 +68,7 @@ const Crew = () => {
   
   return (
     <div className={styles.crew}>
-
+      <img className={styles.imgPessoasM} src={imgPessoa} alt="img pessoas" />
       <section className={styles.dados}>
         <span>
           <label>02</label> <p>Conheça sua tripulação.</p>
@@ -87,7 +87,7 @@ const Crew = () => {
           </nav>
       </section>
 
-      
+        
         <img className={styles.imgPessoas} src={imgPessoa} alt="img pessoas" />
 
     </div>

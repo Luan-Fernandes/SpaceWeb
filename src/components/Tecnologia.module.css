@@ -7,7 +7,20 @@
     justify-content: flex-end;
     align-items: center;
     color: white;
-    overflow-y: hidden;
+    overflow-X: hidden;
+}
+.containerpai{
+animation: container2 3s;
+}
+@keyframes container2 {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
 }
 .cabecalho{
    display: flex;
@@ -75,6 +88,19 @@
     background-color: white;
     color: black;
     border-color: white;
+}
+.imgNaves{
+    animation: container1 2s;
+}
+@keyframes container1 {
+    0%{
+        transform: translateX(100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
 }
 
 .imgNaves img{

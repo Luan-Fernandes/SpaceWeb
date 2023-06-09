@@ -12,6 +12,17 @@
     width: 400px;
     height: 382px;
     margin-top: 150px;
+    animation: container2 3s;
+}
+@keyframes container2 {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
 }
 .txt span{
     font-size: 25px
@@ -46,6 +57,17 @@
     padding: 80px;
     margin-top: 150px;
     transition: .5s;
+    animation: container1 2s ;
+}
+@keyframes container1 {
+    0%{
+        transform: translateX(100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
 }
 
 .explore:hover{
