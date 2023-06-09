@@ -9,6 +9,9 @@ import imgLaunch from '../imagens/ImgTecnologia/image-launch-vehicle-portrait.jp
 import imgSpace from '../imagens/ImgTecnologia/image-space-capsule-portrait.jpg'
 import imgSpacePort from '../imagens/ImgTecnologia/image-spaceport-portrait.jpg'
 
+import imgLaunchM from '../imagens/ImgTecnologia/image-launch-vehicle-landscape.jpg'
+import imgSpaceM from '../imagens/ImgTecnologia/image-space-capsule-landscape.jpg'
+import imgSpacePortM from '../imagens/ImgTecnologia/image-spaceport-landscape.jpg'
 const Tecnologia = () => {
 
    //select
@@ -17,6 +20,7 @@ const Tecnologia = () => {
    const [nameNaves, setNameNaves] = useState();
    const [txtSobre, setTxtSobre] = useState();
    const [imgNaves, setImgNaves] = useState();
+   const [imgNavesM, setImgNavesM] = useState();
  
    //css nav bar
    const [styleLaunch, setStyleLaunch] = useState();
@@ -28,6 +32,7 @@ const Tecnologia = () => {
       setNameNaves("VEÍCULO DE LANÇAMENTO")
       setTxtSobre("Um veículo lançador ou foguete portador é um veículo impulsionado por foguete usado para transportar uma carga útil da superfície da Terra para o espaço, geralmente para a órbita da Terra ou além. Nosso foguete portador WEB-X é o mais poderoso em operação. Com 150 metros de altura, é uma visão inspiradora na plataforma de lançamento!")
       setImgNaves(imgLaunch)
+      setImgNavesM(imgLaunchM)
       setStyleLaunch(styles.activeNav)
       setStylesPaceport(null)
       setStylesPaceCapsula(null)
@@ -37,6 +42,7 @@ const Tecnologia = () => {
       setNameNaves("ESPAÇOPORTO")
       setTxtSobre("Um porto espacial ou cosmódromo é um local para lançar (ou receber) espaçonaves, por analogia ao porto marítimo para navios ou aeroporto para aeronaves. Baseado no famoso Cabo Canaveral, nosso espaçoporto está idealmente situado para aproveitar a rotação da Terra para o lançamento. ")
       setImgNaves(imgSpacePort)
+      setImgNavesM(imgSpaceM)
       setStyleLaunch(null)
       setStylesPaceport(styles.activeNav)
       setStylesPaceCapsula(null)
@@ -45,6 +51,7 @@ const Tecnologia = () => {
       setNameNaves("CÁPSULA ESPACIAL")
       setTxtSobre("Uma cápsula espacial é uma espaçonave frequentemente tripulada que usa uma cápsula de reentrada de corpo contundente para reentrar na atmosfera da Terra sem asas. Nossa cápsula é onde você passará seu tempo durante o voo. Inclui um ginásio espacial, cinema e muitas outras actividades para o manter entretido.")
       setImgNaves(imgSpace)
+      setImgNavesM(imgSpacePortM)
       setStyleLaunch(null)
       setStylesPaceport(null)
       setStylesPaceCapsula(styles.activeNav)
@@ -52,6 +59,10 @@ const Tecnologia = () => {
   },[selectNaves])
   return (
     <div className={styles.tecnologia}>
+
+        <img className={styles.imgNavesM} src={imgNavesM} alt="img Naves" />
+      
+
       <section className={styles.containerpai}>
       <div className={styles.cabecalho}>
         <span>03</span>

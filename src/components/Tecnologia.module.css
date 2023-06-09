@@ -9,6 +9,9 @@
     color: white;
     overflow-X: hidden;
 }
+.imgNavesM{
+    display: none;
+}
 .containerpai{
 animation: container2 3s;
 }
@@ -107,4 +110,68 @@ animation: container2 3s;
     margin-top: 70px;
     height: 450px;
     width: 400px;
+}
+@media screen and (max-width: 720px) {
+    .containerpai{
+        display: block;
+    }
+    .tecnologia{
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    .imgNaves{
+        display: none;
+        
+    }
+    .imgNavesM{
+        display: block;
+        width: 100%;
+        margin-top: 70px;
+        animation: container1 2s;
+    }
+    @keyframes container1 {
+        0%{
+            transform: translateX(100px);
+            opacity: 0%;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 100%;
+        }
+    }
+    .dados{
+        flex-direction: column-reverse;
+        width: 99%;
+        align-items: center;
+        gap: 0px;
+    }
+    .dados h1{
+        font-size: 22px;
+    }
+    .dados p{
+        width: 99%;
+    }
+    .dadosNaves{
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    .navbar{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .launch, .spacePort, .spaceCapsula{
+        border: 1px solid;
+        width: 70px;
+        height: 70px;
+        border-radius: 60px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        font-size: 40px;
+    }
+    
 }
